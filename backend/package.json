@@ -58,6 +58,6 @@
     "ext": "ts"
   },
   "engines": {
-    "node": "10.x"
+    "node": "12.16.x"
   }
 }
