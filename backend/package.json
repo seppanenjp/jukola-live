@@ -8,8 +8,6 @@
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "startdev": "node --inspect=5858 -r ts-node/register ./src/index.ts",
     "startdev:watch": "nodemon",
-    "gcp-build": "tsc",
-    "deploy": "gcloud beta app deploy --version prod",
     "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts"
   },
   "repository": {
