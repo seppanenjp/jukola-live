@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/index.js",
+    "start": "node index.js",
     "startdev": "node --inspect=5858 -r ts-node/register ./src/index.ts",
     "startdev:watch": "nodemon",
     "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts"
