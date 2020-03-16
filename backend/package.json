@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "startdev": "node --inspect=5858 -r ts-node/register ./src/index.ts",
     "startdev:watch": "nodemon",
     "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts"
