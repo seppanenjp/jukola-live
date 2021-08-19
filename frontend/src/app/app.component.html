@@ -1,55 +1,349 @@
-<nav class="navbar navbar-expand-lg navbar-dark primary-navbar mb-3">
-    <a class="navbar-brand" href="#">
-        <img class="logo" src="https://cdn.jukola.com/wp-content/blogs.dir/18/files/2018/08/jukola_2020_logo_white.png">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<div class="row">
+  <div class="col-12 pr-0">
+    <nav class="navbar navbar-expand-lg navbar-dark primary-navbar">
+      <a class="navbar-brand" href="#">
+        <img
+          class="logo"
+          src="https://jukola.com/wp-content/uploads/sites/18/2020/06/Jukola_Logo_2021_Napapiiri_RGB5_525x200-002_nettisivuille.png"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Live <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="https://results.jukola.com/tulokset-new/fi/">#Jukola somefeed</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="https://results.jukola.com/tulokset-new/fi/">Tulokset</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link">Ohjeet</a>
-            </li>
+          <li class="nav-item active">
+            <a class="nav-link">
+              Live <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active" (click)="instructions.open()">
+            <a class="nav-link"> Instructions </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://twitter.com/jukolanviesti">
+              #Jukola Twitter
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://online.jukola.com/tulokset/en/">
+              Results
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://jukola.com/2021/en/terrain-and-map/"
+            >
+              Terrain & Map
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://play.google.com/store/apps/details?id=com.jukolaapp"
+            >
+              Jukola App | Android
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://apps.apple.com/fi/app/jukola-2020/id1466617527"
+            >
+              Jukola App | Apple
+            </a>
+          </li>
+          <!-- <li class="nav-item active">
+        <a class="nav-link">Instructions</a>
+      </li>-->
         </ul>
-    </div>
-</nav>
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="row mb-4">
+  <div class="col-12 bg-light text-center">
+    <a href="https://puolustusvoimat.fi/etusivu">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/MarsMars-2.png"
+      />
+    </a>
+    <a href="https://laplandhotels.com/FI/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2020/01/LHjaLS-2-1.png"
+      />
+    </a>
+    <a href="https://www.brpscandinavia.com/FI/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/BRP-Finland-2.png"
+      />
+    </a>
+    <a href="http://www.neve.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2021/07/Neve-5.png"
+      />
+    </a>
+    <a href="http://ellappi.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2021/07/Ellappi-2.png"
+      />
+    </a>
+    <a href="http://rovaniemi.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2021/07/Rovaniemi-3-1.png"
+      />
+    </a>
+    <a href="https://www.europcar.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/Europcar-2.png"
+      />
+    </a>
+    <a href="https://santasport.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/Santasport-2.png"
+      />
+    </a>
+    <a href="https//kas.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2021/05/Kas-juhlavuosi.png"
+      />
+    </a>
+    <a href="https://www.boliden.com/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/Boliden-2.png"
+      />
+    </a>
+    <a href="https://www.lapinkansa.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/Lapin-Kansa-2.png"
+      />
+    </a>
+    <a href="https://www.residuum.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/Napapiirin-Residuum-2.png"
+      />
+    </a>
+    <a href="https://www.grano.fi/">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/Grano-2.png"
+      />
+    </a>
+    <a href="https://www.datagroup.fi/dgsatait">
+      <img
+        class="sponsor"
+        src="https://jukola.com/wp-content/uploads/sites/18/2019/11/DG-Sata-IT-2.png"
+      />
+    </a>
+  </div>
+</div>
 <div class="container-fluid">
-    <div class="row mb-3">
-        <div class="col-6">
-            <div class=" mb-3">
-                    <div id="1552_f_297509" width="800" height="500" class="dacast-video"></div>
-            </div>
-            <div class="card">
-                    <iframe src="https://socket-io-chat.now.sh/" frameborder="0" style="overflow:hidden;height:500px;width:100%" height="500" width="100%"></iframe>
-            </div>
+  <div class="row">
+    <div class="col-xl-6 col-12 mb-3">
+      <div class="card">
+        <div class="card-body" style="height: 82vh; overflow-y: scroll">
+          <iframe
+            src="https://iframe.dacast.com/live/f60d72df-a65b-564c-1192-a7d3e2dcf0d1/8e060446-5c7c-3fdb-cfdb-5792917aa19d"
+            width="100%"
+            height="600px"
+            frameborder="0"
+            scrolling="no"
+            allow="autoplay"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            oallowfullscreen
+            msallowfullscreen
+          ></iframe>
+          <div class="mt-4 mb-5">
+            <h2 class="text-danger text-center mb-3">
+              72<sup>nd</sup> Jukola Relay
+            </h2>
+            <p>
+              An orienteering relay competition with seven legs for teams from
+              orienteering clubs and other associations. The winning team will
+              be awarded the challenge trophy “Lukkarin oppi” (“The
+              Schoolmaster’s Lesson”), donated by the Kaukametsäläiset
+              association.
+            </p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Estimated distance</th>
+                  <th>Estimated leg time</th>
+                  <th>Climb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>12,9 km dark</td>
+                  <td>74 min</td>
+                  <td>230 m</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>12,9 km dark</td>
+                  <td>74 min</td>
+                  <td>230 m</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>16,6 km dark</td>
+                  <td>93 min</td>
+                  <td>300 m</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>9,1 km dark</td>
+                  <td>50 min</td>
+                  <td>120 m</td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>8,9 km dark/dawn</td>
+                  <td>50 min</td>
+                  <td>120 m</td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td>11,0 km dawn/daylight</td>
+                  <td>59 min</td>
+                  <td>180 m</td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td>16,4 km daylight</td>
+                  <td>85 min</td>
+                  <td>280 m</td>
+                </tr>
+                <tr>
+                  <td><b>Total</b></td>
+                  <td>87,8 km</td>
+                  <td>8h 5 min</td>
+                  <td>1460 m</td>
+                </tr>
+              </tbody>
+            </table>
+            <i
+              >All legs include approximately 1200 meters of marked route.
+              Forking is used in all legs. The sun sets at 9:30 p.m. on
+              Saturday, 21st of August and rises at 5:13 a.m. on Sunday, 22nd of
+              August. The race starts with a mass start at 11.00 p.m. on
+              Saturday, 21st of August 2021.
+            </i>
+          </div>
+          <hr />
+          <div class="mt-5">
+            <h2 class="text-danger text-center mb-3">
+              43<sup>rd</sup> Venla Relay
+            </h2>
+            <p>
+              An orienteering relay competition with four legs for women’s teams
+              from orienteering clubs and other associations. The winning team
+              will be awarded the challenge trophy “Venlan avaimet” (“Venla’s
+              keys”) donated by the Kaukametsäläiset association.
+            </p>
 
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Estimated distance</th>
+                  <th>Estimated leg time</th>
+                  <th>Climb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>7,3 km</td>
+                  <td>45 min</td>
+                  <td>70 m</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>5,4 km</td>
+                  <td>33 min</td>
+                  <td>50 m</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>9,1 km</td>
+                  <td>56 min</td>
+                  <td>110 m</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>8,5 km</td>
+                  <td>52 min</td>
+                  <td>90 m</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>30,3 km</td>
+                  <td>3 h 6 min</td>
+                  <td>320 m</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    <div style="position:relative;padding-top:975px;">
-                        <iframe frameBorder="0" src="https://results.jukola.com/tulokset-new/fi/j2019_ju/" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:975px"></iframe>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-
+    <div class="col-xl-6 col-12">
+      <div class="card">
+        <div class="card-body pt-0 pr-0 pl-0">
+          <div style="position: relative; padding-top: 80vh">
+            <iframe
+              id="jukola-online"
+              frameBorder="0"
+              src="https://online.jukola.com/tulokset/en/"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="overlay animated fadeOut slower delay-1s">
-    <div class="logo-container">
-        <img src="./assets/images/jukola-square.png" style="width: 100%;"><br>
-    </div>
+  <div class="logo-container text-center">
+    <h1 class="text-light">Welcome to Jukola Live</h1>
+    <img
+      src="https://jukola.com/wp-content/uploads/sites/18/2020/06/Jukola_Logo_2021_Napapiiri_RGB5_525x200-002_nettisivuille.png"
+      style="width: 100%"
+    /><br />
+  </div>
 </div>
+<app-instructions #instructions></app-instructions>
